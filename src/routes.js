@@ -7,6 +7,7 @@ module.exports = router;
 
 
 // Example endpoint
-router.get('/', function (req, res) {
+router.get('/', function (req, res, next) {
   res.sendFile(__dirname + '/index.html');
+  next();
 });
